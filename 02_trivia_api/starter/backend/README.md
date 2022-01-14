@@ -41,7 +41,7 @@ or
 ```bash
 psql trivia < trivia.psql
 ```
-* on windows
+* on windows (powershell)
 ```powershell
 > $ENV:PGPASSWORD="<password>"
 > cat trivia.psql | psql -U postgres trivia 
