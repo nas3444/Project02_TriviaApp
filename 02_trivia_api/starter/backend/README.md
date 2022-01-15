@@ -52,11 +52,25 @@ psql trivia < trivia.psql
 From within the `./src` directory first ensure you are working using your created virtual environment.
 
 To run the server, execute:
-
+* linux bash
 ```bash
-flask run --reload
+> export FLASK_APP=flaskr
+> export FLASK_DEBUG=1
+> flask run --reload
 ```
 
+* windows powershell
+```bash
+> $ENV:FLASK_APP="flaskr"
+> flask run --reload
+```
+
+
+* windows cmd
+```bash
+> set FLASK_APP=flaskr
+> flask run --reload
+```
 The `--reload` flag will detect file changes and restart the server automatically.
 
 ## ToDo Tasks
