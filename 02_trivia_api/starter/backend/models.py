@@ -4,10 +4,8 @@ from flask_sqlalchemy import SQLAlchemy
 import json
 
 
-# TODO: don't forget to create the trivia database in the psql
 database_name = "trivia"
-# TODO: don't forget to replace <password> with your postgres password
-database_path = 'postgresql://postgres:<password>@localhost:5432/{}'.format(database_name)
+database_path = 'postgresql://postgres:root@localhost:5432/{}'.format(database_name)
 
 db = SQLAlchemy()
 
